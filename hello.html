@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!--<link rel="stylesheet" href="general.css" type="text/css"> 2 css used, general will be implemented<<priority-->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1><b><i><u>Heading One</u></i></b></h1>
+    <h1>Table of Contents</h1>
+        <a href="#t1">Click to Jump to First Topic.   </a><br>
+        <a href="#t2">Click to Jump to Second Topic. </a>
+    
+    <p>I Pursuing <abbr title="Bachelor of Science">BS</abbr> from <abbr title="IIT Madras">IITM.</abbr></p>
+    <!-- <ins>New Text</ins> <del>Old text </del>-->
+    <!--<p>Hello My name is <sup><b>Ayush</b></sup><sub><u>Singh</u></sub></p>-->
+    <!--External Links -->
+    <p>Link1: <a href="https://www.google.com/" rel="external"> to Google's Website</a></p>
+    <p>Link2: <a href="https://www.google.com/" target="_blank">to Google's Website(Opens new tab)</a></p>
+    <!--Internal Anchors -->
+
+    
+    <br>
+    <img src="./images/img1.JPG" alt=" Image is here" height="350" width="550">    
+    
+    <h2 id="t1">First Topic.</h2>
+    <p>Content of first topic.</p>
+    <h2 id="t2"> Second Topic.</h2>  <!--Anchors Directs to these elments-->
+    <p>Content of Second Topic.</p>
+    <!-- attribute = mailto: can also ass cc bcc & write subject body already -->
+    <a href="mailto:ayush0987singh@gmail.com?subject=Internship offer.&body=hello My name is ayush singh nd i will be guiding you through the interview process of this internship training opportunity.">Send email to me.</a>
+<!--LISTS   -->
+<h2><b><i>Chapter 7: Lists</i></b></h2>
+<h3><u>Ordered Lists</u></h3>
+<ol start="5" type="A">
+    <li>Item</li>    <!-- 5 6 4 5 6 numbered,use : reversed -->
+    <li>Some Other Item</li>
+    <li value="4">A Reset Item</li>
+    <li>Another Item</li>
+    <li>Yet Another Item</li>
+</ol>
+    
+<h3><u>Unordered Lists</u></h3>
+<ul>
+    <li>item 1</li>
+    <li>item 2
+    <ul>
+        <li>sub-item 2.1</li>
+        <li>sub-item 2.2</li>
+    </ul>
+    </li>
+    <li>item 3</li>
+</ul>
+<!--Description Lists  -->
+<dl>
+    <dt>name 1</dt>
+    <dt>name 2</dt>
+    <dd>value for 1 and 2</dd>
+    <dt>name 3</dt>
+    <dd>value for 3</dd>
+    <dd>value for 3</dd>
+</dl>
+
+<!--TABLES TABLES-->
+<table border="1px">
+    <tr>
+        <th>Heading 1/Column 1</th>
+        <th>Heading 2/Column 2</th>
+    </tr>
+    <tr>
+        <td>Row 1 Data Column 1</td>
+        <td>Row 1 Data Column 2</td>
+    </tr>
+    <tr>
+        <td>Row 2 Data Column 1</td>
+        <td>Row 2 Data Column 2</td>
+    </tr>
+</table>
+<br>
+<table border="1px">
+    <tr>
+        <td>row 1 col 1</td>
+        <td>row 1 col 2</td>
+        <td>row 1 col 3</td>
+    </tr>
+    <tr>
+        <td colspan="3">This second row spans all three columns</td>
+    </tr>
+    <tr>
+        <td rowspan="2">This cell spans two rows</td>
+        <td>row 3 col 2</td>
+        <td>row 3 col 3</td>
+    </tr>
+    <tr>
+        <td>row 4 col 2</td>
+        <td>row 4 col 3</td>
+    </tr>
+</table>
+
+<br><br><hr width="350"; align="left">
+<table style="background-color: burlywood;" border="1px" >
+    <caption style="background-color: black; color: yellow;">Students Table</caption> <!--| caption is the first child of table |-->
+    <thead style="background-color: grey; color: brown;"> <!--======================| thead is after caption |-->
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    </thead>
+        <tbody style="background-color: palegreen; color: blue;" > <!--======================| tbody is after thead |-->
+        <tr>
+            <td>Ayush</td>
+            <td>Singh</td>
+        </tr>
+        <tr>
+            <td>Prakash</td>
+            <td>Shukla</td>
+        </tr>
+    </tbody>
+        <tfoot style="background-color: plum;"><!--| tfoot can be placed before or after tbody, but not in a group of tbody. |-->
+    <!--| Regardless where tfoot is in markup, it is rendered at the bottom. |-->
+        <tr>
+            <td>Footer  1</td>
+            <td>Footer  2</td>
+        </tr>
+    </tfoot>
+</table>
+<HR></HR>
+<!-- USING COMMENTS TO NEGLECT WHITESPACES-->
+<a href="#">I hope there will be no extra whitespace after this!</a><!--
+--><button>Foo</button>
+<br>
+<!-- Without it, you can notice a small formatting difference: -->
+<a href="#">I hope there will be no extra whitespace after this!</a>
+<button>Foo</button>
+
+<!--class= Indicates the Class of the element (non-unique)
+id= Indicates the ID of the element (unique in the same context)-->
+
+<div class="highlight">Lorem ipsum</div>
+<span class="highlight">Lorem ipsum</span>
+
+<div id="example-id">DIV  1</div>
+<span id="example-id">SPAN  1</span>
+
+<script>
+    document.write("Hello World!");
+</script>
+<noscript>This Browser Does Not Support JS!</noscript>
+<!--  <script src="example.js"></script>  -->
+<hr><br>
+<!--
+<img src="./images/img1.JPG" height="300" width="350"  alt=""/> <br>Images with links
+<a href="https://google.com/"><img src="./images/img1.JPG" height="100" width="100" alt="Edit"/></a> /
+<a href="https://google.com/"><img src="delete.png" alt="Delete"/></a>
+<br>
+<img src="https://i.stack.imgur.com/ALgZi.jpg?s=48&g=1" alt="hello"
+srcset="https://i.stack.imgur.com/ALgZi.jpg?s=48&g=1 1x,
+https://i.stack.imgur.com/ALgZi.jpg?s=48&g=1 2x,
+https://i.stack.imgur.com/ALgZi.jpg?s=48&g=1 3x">
+<br>
+<picture>
+    <source media="(min-width: 600px)" srcset="./images/img1.JPG">
+    <source media="(min-width: 450px)" srcset="./images/img1.JPG">
+    <img src="./images/img1.JPG" style="width:auto;">
+</picture>
+
+
+<img src="http://jaced.com/blogpix/2007/trisquarecircle/002.gif" usemap="#shapes">
+<map name="shapes">
+    <area shape="polygon" coords="79,6,5,134,153,134">
+    <area shape="rectangle" coords="177,6,306,134">
+    <area shape="circle" coords="397,71,65">
+</map>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

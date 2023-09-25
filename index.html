@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><u>Input Boxes</u></h2>
+    <link rel="stylesheet" href="general.css" type="text/css">
+    <input class="inp1" type="text" size="50">
+    <br>
+    <input type="radio" name="color" id="red" value="#F00">
+    <input checked="" type="radio" name="color" id="green" value="#0F0">
+    <input type="radio" name="color" id="blue" value="#00F">
+<br><br>
+
+    <LABEl>
+        <input type="radio" name="color" value="#F00">
+        Red
+    </LABEl><br>  <!--Both are same methods-->
+    <input type="checkbox" name="color" value="#F00" id="red">
+    <label for="red">Red</label>
+
+    <fieldset>
+        <legend style="color: aqua; background-color: black;">Theme color:</legend>
+        <p>
+            <input type="radio" name="color1" id="red" value="#F00">
+            <label for="red">Red</label>
+        </p>
+        <p>
+            <input type="radio" name="color2" id="green" value="#0F0">
+            <label for="green">Green</label>
+        </p>
+        <p>
+            <input type="radio" name="color3" id="blue" value="#00F">
+            <label for="blue">Blue</label>
+        </p>
+        <p>
+            <label for="ex1">Enter email:</label>
+            <input required minlength="3" maxlength="25" id="ex1" type="email" pattern="\*@*" title="Email Only!">
+        </p>
+    </fieldset>
+<br><br>
+<form>
+    <input type="text" value="Name" required>
+    <input type="email" value="Email" name="email" required>
+    <input pattern="\d*" name="number" value="Number" required><br>
+    <input type="submit" value="Publish"> <!-- form will be validated -->
+    <input type="submit" value="Save" formnovalidate> <!-- form will NOT be validated -->
+    <input type="color" name="favcolor" value="#ff0000"><br>
+    <input type="password" name="password" placeholder="Password"><br><hr>
+    <input type="file" name="fileSubmission" id="fileSubmission" multiple>
+    <input type="file" name="fileSubmission" accept="image/x-png,image/gif,image/jpeg" />
+    <br><br>
+    <button type="button" value="Button Text">Button Text</button>
+    <button type="button" onclick="alert('hello world!')">Click Me</button>
+<br><br>
+    <!--  ATTRIBUTES for submit buttons::
+    form, formaction, formenctype, formmethod, formnovalidate ,formtarget-->
+
+    <button type="submit">
+        <img src="./images/img2.jpg" /> Click Image To Submit
+    </button>
+    <input type="reset" value="Reset"> <!--Reset All Values of fowm ka button-->
+    <br><br>
+    <form action="">
+        <Label>Range: </Label>
+        <input type="range" min="" max="" step="" />
+    </form>
+    <input type="search" name="googlesearch">
+    <input type="image" src="./images/img2.jpg"  alt="image_name" height="50px" width="50px"/>
+    <hr><input type="week">
+    <input type="datetime-local" />
+    <input type="url" name="Homepage" value="Enter URL">
+    <input type="month" />
+    <input type="time" /><br>
+    <fieldset>
+        <p><label>Meeting time: <input type="date" name="meeting.start"></label>
+    </fieldset>
+
+    
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
